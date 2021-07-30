@@ -1,11 +1,19 @@
+/* #0b5ed7 + #0a58ca + #0a53be --> #ab4ccc
+   rgba(49 132 253 / 50%) --> rgba(171, 76, 204, 0.5) = #ab4ccc with 50% opacity
+*/
+
 * {
 }
 
 body {
-    background-color: #FDF8FC;
+    background-color: #FFFFFF;
 }
-.btn-primary {
-  background-image: linear-gradient(to right, #2B52D3, #8B2EC4);
+
+/*Navbar*/
+
+/* Fancy Button*/
+.btn-primary-important {
+  background-image: linear-gradient(to right, #991FA7, #79179a);
   justify-content: center!important;
   padding-right: 16px!important;
   padding-left: 16px!important;
@@ -31,7 +39,7 @@ body {
     border: none;
     outline: none;
     color: #fff;
-    background-image: linear-gradient(to right, #2B52D3, #8B2EC4) !;
+    background-image: linear-gradient(to right, #991FA7, #79179a) !;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -40,7 +48,7 @@ body {
 
 .glow-on-hover:before {
     content: '';
-    background: linear-gradient(45deg, #2B52D3, #8B2EC4, #2B52D3, #8B2EC4);
+    background: linear-gradient(45deg, #991FA7, #79179a, #991FA7, #79179a);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -56,7 +64,7 @@ body {
 }
 
 .glow-on-hover:active {
-  background-image: linear-gradient(to right, #2B52D3, #8B2EC4);
+  background-image: linear-gradient(to right, #991FA7, #79179a);
 }
 
 .glow-on-hover:active:after {
@@ -73,11 +81,29 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right, #2B52D3, #8B2EC4);;
+    background-image: linear-gradient(to right, #991FA7, #79179a);;
     left: 0;
     top: 0;
     border-radius: 9999px;
 }
+
+/*Course Card*/
+.card {
+  transition: transform .3s,box-shadow .3s,-webkit-transform .3s,-webkit-box-shadow .3s
+
+}
+
+.card .btn-primary {
+  margin-left: auto;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 6px -6px rgb(0 0 0 / 40%)
+}
+
+/*Banner*/
 
 @keyframes glowing {
     0% { background-position: 0 0; }

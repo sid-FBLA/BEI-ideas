@@ -10,11 +10,11 @@
     <script src="less.js" type="text/javascript"></script>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="bootstrap.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;900&display=swap" rel="stylesheet">
 
     <!-- Fontawesome Icons -->
@@ -31,15 +31,117 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <div class="mx-5 mt-5 heading">
-      <h1>Button Example</h1>
-      <small>Hover to see changes. A moving blurred gradient surrounds the button upon hover.
-      Adds a nice aesthetic touch, colours can be modified.</small>
-    </div>
-    <div class="mt-5">
-      <div class="pulse-wrap mx-5">
-          <button type="button" class="btn btn-primary glow-on-hover">Signup</button>
+    <!-- Navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light p-md-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">Web Zone</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+
+    <div class="">
+      <div class="mx-5 mt-5 heading">
+        <h1>Main Button Example</h1>
+        <small>Hover to see changes. A moving blurred gradient surrounds the button upon hover.
+        Adds a nice aesthetic touch, colours can be modified.</small>
+      </div>
+      <div class="pulse-wrap mx-5 mt-5">
+          <button type="button" class="btn btn-primary btn-primary-important glow-on-hover">Signup</button>
+      </div>
+
+      <div class="mx-5 mt-5 heading">
+        <h1>Regular Button Example</h1>
+        <small>Regular buttons, usually placed on cards.</small>
+      </div>
+      <div class="mx-5 mt-5">
+        <button type="button" class="btn btn-primary">Signup</button>
+      </div>
+
+      <div class="mx-5 mt-5 heading">
+        <h1>Card Examples</h1>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 mx-5 mt-5">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://wallup.net/wp-content/uploads/2018/03/23/566310-sky-landscape-road-sunset.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex flex-row-reverse">
+                <button type="button" class="btn btn-primary ms-auto">Signup</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://wallup.net/wp-content/uploads/2018/03/23/566310-sky-landscape-road-sunset.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex flex-row-reverse">
+                <button type="button" class="btn btn-primary ms-auto">Signup</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://wallup.net/wp-content/uploads/2018/03/23/566310-sky-landscape-road-sunset.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex flex-row-reverse">
+                <button type="button" class="btn btn-primary ms-auto">Signup</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://wallup.net/wp-content/uploads/2018/03/23/566310-sky-landscape-road-sunset.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex flex-row-reverse">
+                <button type="button" class="btn btn-primary ms-auto">Signup</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="mx-5 mt-5 heading">
         <h1>Banner Example</h1>
         <small>Text can be changed, text should contain company "message", this banner is actually
@@ -72,7 +174,7 @@
         <i class="fa fa-instagram fa-4x icon-3d"></i>
         <i class="fa fa-whatsapp fa-4x icon-3d"></i>
       </div>
-
+      <!--
       <h1 class="mt-5 mx-5">Animations To Try Out</h1>
       <small class="mx-5">Scroll down to see, ignore the images/text and design, this is only to show animations</small>
       <div class="flex d-flex mt-5 container box">
@@ -119,7 +221,7 @@
           <div data-aos="fade-down" class="purple-box"></div>
         </div>
       </div>
-
+    -->
     </div>
 
   </body>
